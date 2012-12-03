@@ -1,0 +1,57 @@
+a, abbr, acronym, address, applet, area, article, aside, audio,
+b, base, basefont, bdo, bgsound, big, blink, blockquote, body, br, button,
+canvas, caption, center, cite, code, col, colgroup, command, comment,
+datalist, dd, del, details, dfn, dir, div, dl, dt,
+em, embed,
+fieldset, figcaption, figure, font, footer, form, frame, frameset,
+h1, h2, h3, h4, h5, h6, head, header, hgroup, hr, html,
+i, iframe, img, input, ins, isindex,
+kbd, keygen,
+label, legend, li, link,
+map, mark, marquee, menu, meta, meter,
+nav, nobr, noembed, noframes, noscript,
+object, ol, optgroup, option, output,
+p, param, plaintext, pre, progress,
+q,
+rp, rt, ruby,
+s, samp, script, selection, select, small, source, span, strike, strong, style, sub, sup, summary,
+table, tbody, td, textarea, tfoot, th, thead, time, title, tr, tt,
+u, ul,
+var, video,
+wbr,
+xmp {
+  margin: 0;
+  padding: 0;
+}
+
+a,
+a:active,
+a:hover,
+a:visited {text-decoration: none;}
+
+fieldset, hr {border: none;}
+
+blockquote, q {quotes: none;}
+
+button, input, select, textarea {font-family: inherit;}
+                       textarea {resize: none;}
+
+h1, h2, h3, h4, h5, h6 {font-weight: normal;}
+
+  img {vertical-align: top;}
+a img {border: none;}
+
+menu, ol, ul {list-style-type: none;}
+
+sub {vertical-align: text-bottom;}
+sup {vertical-align: text-top;}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+th {
+  font-weight: normal;
+  text-align: left;
+}
+td {vertical-align: top;}

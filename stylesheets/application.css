@@ -1,0 +1,196 @@
+/* Font
+--------------------------------------------------------------------*/
+@import url(http://fonts.googleapis.com/css?family=PT+Sans:400,700,400italic,700italic&subset=latin,cyrillic);
+@import url(http://fonts.googleapis.com/css?family=PT+Serif:400,700,400italic,700italic&subset=latin,cyrillic);
+
+/* Body & html
+--------------------------------------------------------------------*/
+html {
+  font-size: 62.5%;  
+  height: 100%;
+}
+body {
+  background: #000;
+  color: #fff;
+  font-family: 'PT Sans', sans-serif;
+  height: 100%;
+  line-height: 1.33;
+  overflow: hidden;
+  position: relative;
+}
+
+/* Headers
+--------------------------------------------------------------------*/
+h1, h2, h3, h4, h5, h6 {font-family: 'PT Serif', serif;}
+h1, h2 {line-height: 1.11;}
+h3, h4 {line-height: 1.22;}
+h5, h6 {line-height: 1.33;}
+h1 {font-size: 2.8rem;}
+h2 {font-size: 2.4rem;}
+h3 {font-size: 2.1rem;}
+h4 {font-size: 1.8rem;}
+h5 {font-size: 1.4rem;}
+
+/* Link style
+--------------------------------------------------------------------*/
+a:not(.link) {text-decoration: underline;}
+a:hover {text-decoration: none;}
+
+a.iconed {display: inline-block;}
+a.iconed:not(.pseudo) .text {text-decoration: underline;}
+a.iconed:hover .text {text-decoration: none;}
+
+a.pseudo {line-height: 1;}
+a.pseudo:not(.iconed),
+a.pseudo.iconed .text {border-bottom: 1px dashed blue;}
+a.pseudo:hover,
+a.pseudo:hover .text {border-bottom-color: transparent;}
+
+/* Lists
+--------------------------------------------------------------------*/
+.list li {
+  position: relative;
+  margin-left: 4rem;
+}
+.list li:before {
+  position: absolute;
+  top: 0;
+  left: -2rem;
+  content: "—";
+}
+
+/* Content style
+--------------------------------------------------------------------*/
+.scroll-pane {
+  height: 600px;
+  overflow: auto;
+  width: 974px;
+}
+
+.cnt {
+  font-size: 1.3rem;
+  line-height: 1.5;
+}
+
+.cnt h1,
+.cnt h2,
+.cnt h3,
+.cnt h4,
+.cnt h5,
+.cnt h6 {margin-bottom: 1.5rem;}
+.cnt h6 {
+  color: #fff;
+  font-weight: bold;
+}
+
+.cnt p:not(:last-child),
+.cnt img:not(:last-child),
+.cnt > ol:not(:last-child),
+.cnt > ul:not(:last-child) {margin-bottom: 2rem;}
+
+.cnt ol       {list-style-type: decimal;}
+.cnt ol ol    {list-style-type: lower-alpha;}
+.cnt ol ol ol {list-style-type: lower-roman;}
+
+.cnt ul       {list-style-type: disc;}
+.cnt ul ul    {list-style-type: circle;}
+.cnt ul ul ul {list-style-type: square;}
+
+.cnt ol li ol,
+.cnt ul li ul {margin-top: 1.5rem;}
+
+.cnt li {margin: 0 0 1.5rem 4.5rem;}
+
+.cnt sup,
+.cnt sub {font-size: 1rem; line-height: 1;}
+
+/* Float
+--------------------------------------------------------------------*/
+.clearfix:after {
+  display: block;
+  visibility: hidden;
+  clear: both;
+  height: 0;
+  content: ".";
+  line-height: 0;
+}
+.f-left  {float: left;}
+.f-right {float: right;}
+
+/* Blocks
+--------------------------------------------------------------------*/
+.d-block {display: block;}
+.b-center {margin: 0 auto;}
+.p-rel {position: relative;}
+
+/* Slider
+--------------------------------------------------------------------*/
+.iosSlider {
+  height: 600px;
+  overflow: hidden;
+  position: relative;
+  width: 1024px;
+}
+  .iosSlider .slider {height: 100%; width: 100%;}
+    .iosSlider .slider .slide {
+      float: left;
+      height: 600px;
+      width: 1024px;
+    }
+
+/* Loading
+--------------------------------------------------------------------*/
+.loading {
+  background: url('../i/ajax-loader.gif') no-repeat center;
+  bottom: 0;
+  left: 0;
+  position: absolute;
+  right: 0;
+  top: 0;
+}
+
+/* Console
+--------------------------------------------------------------------*/
+.console {
+  color: #fff;
+  padding: 10px;
+  position: absolute;
+}
+  .console div {
+    margin-bottom: 5px;
+  }
+
+/* Constrols
+--------------------------------------------------------------------*/
+.controls {
+  bottom: 0;
+  height: 50px;
+  left: 50%;
+  margin-bottom: 40px;
+  margin-left: -180px;
+  position: absolute;
+  width: 360px;
+}
+  .controls_i {
+    border: 1px solid red;
+    -webkit-border-radius: 5px;
+       -moz-border-radius: 5px;
+            border-radius: 5px;
+    color: #fff;
+    float: left;
+    height: 50px;
+    line-height: 50px;
+    margin: 0 10px;
+    text-align: center;
+    width: 50px;
+  }
+
+/* Footer
+--------------------------------------------------------------------*/
+.footer {
+  bottom: 0;
+  left: 0;
+  padding: 5px 10px;
+  position: absolute;
+  right: 0;
+}
