@@ -29,3 +29,7 @@ nbproject
 #rvm
 .rvmrc
 .rvmrc.*
+
+# Project file
+config.txt
+*.log
