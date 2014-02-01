@@ -1,0 +1,105 @@
+@if $grid == "responsive-auto" or $grid == "responsive-manual" {
+  @include media-query(tablet) {body {padding-top: 0 !important;}}
+  @include media-query(phone) {body {padding-top: 0 !important;}}
+}
+
+
+
+//****************************************************************************************************
+//
+// .. HEADER
+//
+//****************************************************************************************************
+.header {
+  @include media-query(desktop) {
+    &.__sticky {
+      position: fixed;
+      top: 0;
+      right: 0;
+      left: 0;
+      z-index: 1000;
+      background: $base-bg;
+      box-shadow: .1em .1em .3em rgba(0, 0, 0, .25);
+    }
+  }
+}
+
+
+
+//****************************************************************************************************
+//
+// .. LOGO
+//
+//****************************************************************************************************
+.logo {
+  font-family: 'Tangerine', cursive;
+  font-size: 30px;
+  position: absolute;
+  top: 10px;
+  right: 10px;  
+}
+
+
+//****************************************************************************************************
+//
+// .. UI
+//
+//****************************************************************************************************
+//
+// .. User
+//
+.user {
+  background-color: blue;
+  border-radius: 100%;
+  cursor: pointer;
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  width: 64px;
+  height: 64px;
+  z-index: 9999;
+  @include prefixes(box-sizing, border-box);  
+}
+  .user_avatar {
+    
+  }
+
+
+//
+// .. CONSOLE
+//
+.console {
+  border-radius: 5px;
+  padding: 10px;
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  width: 250px;
+  z-index: 9999;
+  @include prefixes(box-sizing, border-box);
+  &::before {
+    content: '';
+    background-color: #fff;
+    border-radius: 5px;
+    opacity: .2;
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+  }
+}
+
+
+  
+//****************************************************************************************************
+//
+// .. FOOTER
+//
+//****************************************************************************************************
+.footer {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  left: 0;
+}

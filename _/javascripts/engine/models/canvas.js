@@ -4,7 +4,7 @@ var Canvas = function() {
     this.canvas = document.createElement('canvas'),
     this.ctx    = this.canvas.getContext('2d');
     this.canvas.width  = window.innerWidth;
-    this.canvas.height = window.innerHeight - 120;
+    this.canvas.height = window.innerHeight;
     this.canvas.width_half  = this.canvas.width / 2;
     this.canvas.height_half = this.canvas.height / 2;
     document.getElementById(containerID).appendChild(this.canvas);

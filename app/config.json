@@ -1,0 +1,19 @@
+config = {
+  
+  "viewportID": "viewport",
+  
+  "tiles": {
+    "size": {
+      "w":  64,
+      "wh": 32,
+      "h":  32,
+      "hh": 16
+    }
+  },
+  
+  "map": {
+    "showGrid": true,
+    "showCoordinates": true
+  }
+  
+};
