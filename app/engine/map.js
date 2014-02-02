@@ -32,6 +32,7 @@ var Map = function(options) {
       }
     }
     
+    // Show coordinates
     if (this.options.showCoordinates) {
       canvas.ctx.textAlign = 'center';
       canvas.ctx.fillStyle = 'red';
